@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo App</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1>Mozilla Ayuda</h1>
+<form id="buscar">
+<input type="text" id="txtbuscar" required />
+<a href="#" id="btnbuscar">Buscar</a>
+<br/><br/>
+<input type="radio" name="ms" id="cbms" value="Mozilla Sumo" checked /> Mozilla Sumo
+<input type="radio" name="ms" id="cbmh" value="Mozilla Hispano" /> Mozilla Hispano
+</form>
+<br/>
+<span id="ms_ms" style="display:none" >Quieres una solución rapida</span>
+<span id="ms_mh" style="display:none" >Quieres ayuda personalizada</span>
+
+<script type="text/javascript" src="jquery"></script>
+<script type="text/javascript">
+
+if ($('#cbms').is(':checked')) {
+	$("#ms_ms").toggle(this.checked);
+}
+
+if ($('#cbmh').is(':checked')) {
+	$("#ms_mh").toggle(this.checked);
+} 
+
+
+$('#cbms').click(function () {
+    $("#ms_ms").toggle(this.checked);
+    $("#ms_mh").hide();       
+});
+
+$('#cbmh').click(function () {
+	$("#ms_ms").hide();
+    $("#ms_mh").toggle(this.checked);
+});
+
+$('#buscar').submit(function() {
+	if($('#cbms').is(':checked')){
+		var buscarsumo = $('#txtbuscar').val();   
+		window.open("https://support.mozilla.org/es/search?q_tags=desktop&product=firefox&q=" + buscarsumo, '_blank');
+	}else if($('#cbmh').is(':checked')){
+		var buscarmh = $('#txtbuscar').val();   	
+		window.open("https://www.mozilla-hispano.org/foro/search.php?keywords=" + buscarmh, '_blank');
+	}
+});  
+$('#btnbuscar').click(function() {
+	if($('#cbms').is(':checked')){
+		var buscarsumo = $('#txtbuscar').val();   
+		window.open("https://support.mozilla.org/es/search?q_tags=desktop&product=firefox&q=" + buscarsumo, '_blank');
+	}else if($('#cbmh').is(':checked')){
+		var buscarmh = $('#txtbuscar').val();   	
+		window.open("https://www.mozilla-hispano.org/foro/search.php?keywords=" + buscarmh, '_blank');
+	}
+});
+
+</script>
+</body>
+</html>

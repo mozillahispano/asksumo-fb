@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo App</title>
+</head>
+<body>
+<form id="mh">
+<h1>Mozilla Hispano</h1>
+<input type="text" id="buscar" required />
+<a href="#" id="buscarmh">Buscar</a>
+</form>
+<form id="sumo">
+<h1>Mozilla Sumo</h1>
+<input type="text" id="buscar2" required />
+<a href="#" id="buscarsumo">Buscar</a>
+</form>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+$('#buscarmh').click(function() {
+	var buscarmh = $('#buscar').val();
+   	//alert(buscarmh);
+   	window.open("https://www.mozilla-hispano.org/foro/search.php?keywords=" + buscarmh, '_blank');
+});
+
+$('#mh').submit(function() {
+	var buscarmh = $('#buscar').val();
+   	//alert(buscarmh);
+   	window.open("https://www.mozilla-hispano.org/foro/search.php?keywords=" + buscarmh, '_blank');
+});
+
+$('#buscarsumo').click(function() {
+	var buscarsumo = $('#buscar2').val();
+   	//alert(buscarmh);
+   	window.open("https://support.mozilla.org/es/search?q_tags=desktop&product=firefox&q=" + buscarsumo, '_blank');
+});
+
+$('#sumo').submit(function() {
+	var buscarsumo = $('#buscar2').val();
+   	//alert(buscarmh);
+   	window.open("https://support.mozilla.org/es/search?q_tags=desktop&product=firefox&q=" + buscarsumo, '_blank');
+});
+
+</script>
+</body>
+</html>
