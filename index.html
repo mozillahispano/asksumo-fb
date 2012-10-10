@@ -1,46 +1,83 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Demo App</title>
+	<title>m</title>
+	<meta charset="utf-8"/>
 </head>
 <body>
-<form id="mh">
-<h1>Mozilla Hispano</h1>
-<input type="text" id="buscar" required />
-<a href="#" id="buscarmh">Buscar</a>
+
+<h1>Mozilla Ayuda</h1>
+<div id=""></div>
+<form id="buscar" action="javascript:?">
+<input type="text" id="txtbuscar" required />
+<a href="#" id="btnbuscar">Buscar</a>
 </form>
-<form id="sumo">
-<h1>Mozilla Sumo</h1>
-<input type="text" id="buscar2" required />
-<a href="#" id="buscarsumo">Buscar</a>
-</form>
-<script type="text/javascript" src="jquery.js"></script>
+
+<div id="res"></div>
+<script src="js/jquery.js"></script>
 <script type="text/javascript">
 
-$('#buscarmh').click(function() {
-	var buscarmh = $('#buscar').val();
-   	//alert(buscarmh);
-   	window.open("https://www.mozilla-hispano.org/foro/search.php?keywords=" + buscarmh, '_blank');
-});
+$('#buscar').submit(function() {	
+	$('#res').html("");
+	var b = $("#txtbuscar").val();
+	$.getJSON('https://support.mozilla.org/es/search?q=' + b + '&format=json&callback=?',function(data) {		 
 
-$('#mh').submit(function() {
-	var buscarmh = $('#buscar').val();
-   	//alert(buscarmh);
-   	window.open("https://www.mozilla-hispano.org/foro/search.php?keywords=" + buscarmh, '_blank');
-});
+		$.each(data, function(key, val) {		    
+		    $.each(val, function(key2, val2) {
+			    	if (typeof val2.title == "undefined"){										  
+					}else {						
+						$('#res').append('<li>' + val2.title + '</li>');					
+					}
+					
+		  	});
+		  	if(val == 0 ){
+		  		$('#res').html("no hay ninguna referencia");
+		  	} 
+		});
+	});
 
-$('#buscarsumo').click(function() {
-	var buscarsumo = $('#buscar2').val();
-   	//alert(buscarmh);
-   	window.open("https://support.mozilla.org/es/search?q_tags=desktop&product=firefox&q=" + buscarsumo, '_blank');
-});
+	
+});  
+$('#btnbuscar').click(function() {
+	$('#res').html("");
+	var b = $("#txtbuscar").val();
+	$.getJSON('https://support.mozilla.org/es/search?q=' + b + '&format=json&callback=?',function(data) {		 
 
-$('#sumo').submit(function() {
-	var buscarsumo = $('#buscar2').val();
-   	//alert(buscarmh);
-   	window.open("https://support.mozilla.org/es/search?q_tags=desktop&product=firefox&q=" + buscarsumo, '_blank');
+		$.each(data, function(key, val) {		    
+		    $.each(val, function(key2, val2) {
+		    	if (typeof val2.title == "undefined")
+				{										  
+				}else {
+					
+					$('#res').append('<li>' + val2.title + '</li>');					
+				}		    	
+		  	});
+		  	if(val == 0 ){
+		  		$('#res').html("no hay ninguna referencia");
+		  	} 
+		});
+	});
+	
 });
 
 </script>
+
+
+	
+	<script type="text/javascript">
+		/*$.getJSON('https://support.mozilla.org/es/search?q=borrar+cookies&format=json&callback=?',function(data) {		 
+
+		$.each(data, function(key, val) {		    
+		    $.each(val, function(key2, val2) {
+		    	if (typeof val2.title == "undefined")
+				{										  
+				}else {
+					$('body').append('<li>' + val2.title + '</li>');
+				}		    	
+		  	});
+		});
+
+		  
+		});*/
+	</script>
 </body>
 </html>
