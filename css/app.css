@@ -8,7 +8,6 @@
 	src: url('OpenSans-Regular.ttf')  format('truetype');
 }
 
-
 body{
 	background: #ECEDEE url(../img/bg-sky.png) 0 0 repeat-x;
 	color: rgb(51, 51, 51);	
@@ -44,17 +43,28 @@ h1 {
 }
 
 #form {
+    padding-top: 10px;
 	width: 500px;
-	height: 300px;
+	height: 200px;
 	padding: 0 auto;
 	margin:  0 auto;
+}
+
+#res {
+    text-align: justify !important;
+    font-size: 14px;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    font-family: 'openSansRegular', sans-serif;
 }
 
 #wrapper {
 	text-align: center;
 	height: 600px;
 	width: 780px;
-	
+	border-style: dashed;
+    border-width: 2px;
 }
 
 .mensaje {
