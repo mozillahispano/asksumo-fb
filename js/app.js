@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	$('.mensaje').hide();
 	$('.mensaje_error').hide();
+	$('#res').hide();
 
 	$('div#form form').submit(function () {
 
@@ -34,6 +35,10 @@ $(document).ready(function() {
 	        }
 
 	    });
+
+	    $("#form").animate({width: 'hide'}, 1000);
+	    $("#res").animate({width: 'show'}, 1000);
+
 
 	});
 
