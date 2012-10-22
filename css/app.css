@@ -42,19 +42,19 @@ h1 {
     font-weight: normal;
 }
 
-#form {
-    padding-top: 10px;
+#form {    
+    padding-top: 150px;
 	width: 500px;
 	height: 200px;
 	padding: 0 auto;
 	margin:  0 auto;
 }
 
-#res {
+#res {    
     text-align: justify !important;
     font-size: 14px;
     width: 600px;
-    height: 200px;
+    height: 500px;
     margin: 0 auto;
     font-family: 'openSansRegular', sans-serif;
     overflow: auto;
@@ -140,10 +140,10 @@ h1 {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 2px;
-    padding-bottom: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 6px;
+    padding-bottom: 8px;
     height: 40px;
     line-height: 40px;
     text-decoration: none;

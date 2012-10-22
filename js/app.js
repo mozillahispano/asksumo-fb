@@ -21,8 +21,13 @@ $(document).ready(function() {
 	        if (typeof data.message == "undefined") {
 	            $.each(data, function (key, val) {
 	                $.each(val, function (key2, val2) {
-	                    if (typeof val2.title == "undefined") {} else {
-	                        $('#res').append('<li>' + val2.title + '</li>');
+	                    if (typeof val2.title == "undefined") {} else {	                    	
+	                        //$('#res').append('<li>' + val2.title + '</li>');
+	                        var titulo = $('<a href=https://support.mozilla.org' + val2.url +'>' + val2.title + '</li><br/>');
+	                        var descripcion = $('<span>' + val2.search_summary + '</span><br/><br/>');
+
+	                        $("#res").append(titulo);
+	                        $("#res").append(descripcion);
 	                    }
 	                });
 	            });
@@ -36,8 +41,8 @@ $(document).ready(function() {
 
 	    });
 
-	    $("#form").animate({width: 'hide'}, 1000);
-	    $("#res").animate({width: 'show'}, 1000);
+	    $("#form").animate({opacity: 'hide'}, 300);
+	    $("#res").animate({opacity: 'show'}, 300);
 
 
 	});
@@ -73,6 +78,10 @@ $(document).ready(function() {
 	        }
 
 	    });
+
+	    $("#form").animate({opacity: 'hide'}, 300);
+	    $("#res").animate({opacity: 'show'}, 300);
+
 	});
 	
 });
