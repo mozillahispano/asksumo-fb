@@ -43,7 +43,7 @@ h1 {
 }
 
 #form {    
-    padding-top: 150px;
+    padding-top: 50px;
 	width: 500px;
 	height: 200px;
 	padding: 0 auto;
@@ -53,8 +53,8 @@ h1 {
 #res {    
     text-align: justify !important;
     font-size: 14px;
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 450px;
     margin: 0 auto;
     font-family: 'openSansRegular', sans-serif;
     overflow: auto;
@@ -62,8 +62,8 @@ h1 {
 
 #wrapper {
 	text-align: center;
-	height: 600px;
-	width: 780px;
+	height: 795px;
+	width: 805px;
 	border-style: dashed;
     border-width: 2px;
 }
