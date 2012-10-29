@@ -64,6 +64,20 @@ p:first-of-type {
     text-align: left;
 }
 
+p {
+    font-family: 'openSansRegular',sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+#info{
+    padding-top: 30px;
+    width: 650px;
+    height: 190px;
+    padding: 0 auto;
+    margin:  0 auto;   
+}
+
 #form {
 	width: 500px;
 	height: 200px;
