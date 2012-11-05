@@ -4,6 +4,7 @@
 	<title>Mozilla Hispano APP</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/reveal.css">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
@@ -22,10 +23,11 @@
 			<form id="buscar" action="javascript:;" method="post" >
 				<input type="text" id="txtbuscar"  />
 				<a href="#" id="btnbuscar" class="button">Buscar</a>
+				<br/><br/>
+				<div class="mensaje"></div>
+				<div class="mensaje_error"></div>
 			</form>
-		</div>
-		<div class="mensaje"></div>
-		<div class="mensaje_error"></div>
+		</div>		
 		<br/>
 		<div id="res">
 			<div id="main" >
@@ -34,16 +36,45 @@
 			</div>
 		</div>
 		<div id="info">
+			<h3>Artículos populares</h3>
+			<div id="articulos">
+				<div id="artiz">
+					<ul>
+						<li><a href="https://support.mozilla.org/es/kb/no-se-ofrece-soporte-para-firefox-36" target="_blank">No se ofrece soporte para Firefox 3.6.</a></li>
+						<li><a href="https://support.mozilla.org/es/kb/enviar-un-informe-de-fallos-para-ayudar-mozilla-me" target="_blank">Enviar un informe de fallos para ayudar a Mozilla a mejorar Firefox.</a></li>
+						<li><a href="https://support.mozilla.org/es/kb/navegacion-privada-navega-en-la-web-sin-guardar-in" target="_blank">Navegación privada: navega en la Web sin guardar información sobre los sitios que visitas.</a></li>
+						<li><a href="https://support.mozilla.org/es/kb/flash-113-se-cierra" target="_blank">Flash 11.3 se cierra.</a></li>
+					</ul>
+				</div>
+				<div id="artde">
+					<ul>
+						<li><a href="https://support.mozilla.org/es/kb/reproduce-archivos-windows-media-en-firefox-con-el" target="_blank">Reproduce archivos Windows Media en Firefox con el plugin Windows Media.</a></li>
+						<li><a href="https://support.mozilla.org/es/kb/actualizar-firefox-la-ultima-version" target="_blank">Actualizar Firefox a la última versión.</a></li>
+						<li><a href="https://support.mozilla.org/es/kb/C%C3%B3mo%20establecer%20la%20p%C3%A1gina%20de%20inicio" target="_blank">Cómo establecer la página de inicio.</a></li>
+						<li><a href="https://support.mozilla.org/es/kb/Instalar%20Firefox%20en%20Windows" target="_blank">Instalar Firefox en Windows.</a></li>
+					</ul>
+				</div>
+			</div>
 			<p>¿Necesitas más ayuda? Navega por los artículos de <a href="http://support.mozilla.org/es/home" target="_blank">nuestra web de asistencia</a>, o pregunta a nuestros voluntarios en <a href="https://www.mozilla-hispano.org/foro/viewforum.php?f=1" target="_blank">nuestros foros</a>.</p>
 			<p>¿Sabías que la ayuda es brindada por voluntarios como tú? Descubre <a href="https://www.mozilla-hispano.org/documentacion/Colabora" target="_blank">cómo participar</a>.</p>
 		</div>
 	</div>
 
+	<div id="myModal" class="reveal-modal">
+    	<div id="res">
+			<div id="main2">											
+			</div>
+		</div>
+    	<a class="close-reveal-modal">&#215;</a>
+	</div>
+
 <!-- js -->
 <script src="js/jquery.js"></script>
-<script src="js/app.js"></script>
+<script src="js/jquery.reveal.js"></script>
 <script src="js/jquery.quick.pagination.min.js"></script>
 <script src="https://connect.facebook.net/en_US/all.js"></script>
+<script src="js/app.js"></script>
 <script src="js/faceconfig.js"></script>
+
 </body>
 </html>

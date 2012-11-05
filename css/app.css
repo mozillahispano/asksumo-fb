@@ -19,6 +19,7 @@ input[type="text"]:focus, input.focus {
     transition: all 0.1s linear 0s;
 }
 input[type="text"] {
+    width: 350px;
     height: 30px;
     background: none repeat scroll 0% 0% rgb(255, 255, 255);
     border-color: rgb(178, 178, 178);
@@ -43,6 +44,17 @@ h1:first-of-type {
     text-align: left;
 }
 
+h3:first-of-type {
+    font-family: 'openSansRegular', sans-serif;
+    font-size: 25px;
+    letter-spacing: -2px;
+    line-height: 100%;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+    color: rgb(72, 72, 72);
+    font-weight: normal;
+    text-align: left;
+}
+
 ul, li, a{
     text-decoration: none;
 }
@@ -51,11 +63,16 @@ a{
     color: rgb(0, 149, 221);
 }
 
+a:hover {
+    text-decoration:underline;
+}
+
 ul,li{
     list-style:none;
     margin: 0px;
     padding: 0px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
+    font-size: 14px;
 }
 
 p:first-of-type {
@@ -70,8 +87,27 @@ p {
     text-align: left;
 }
 
-#info{
-    padding-top: 30px;
+#articulos {
+    width: 680px;
+    height: 170px;   
+    text-align: left;
+}
+
+#artiz {
+    float: left;
+    width: 300px;
+    padding: 20px;
+
+}
+
+#artde {
+    float: left;
+    width: 300px;
+    padding: 20px;
+
+}
+
+#info {  
     width: 650px;
     height: 190px;
     padding: 0 auto;
@@ -80,14 +116,14 @@ p {
 
 #form {
 	width: 500px;
-	height: 200px;
+	height: 120px;
 	padding: 0 auto;
 	margin:  0 auto;
 }
-#tit{
+#tit {
     padding-top: 30px;
     width: 650px;
-    height: 190px;
+    height: 220px;
     padding: 0 auto;
     margin:  0 auto;  
 }
@@ -111,8 +147,7 @@ p {
     width: 700px;
     height: 430px;
     margin: 0 auto;
-    font-family: 'openSansRegular', sans-serif;
-    background-color: white;
+    font-family: 'openSansRegular', sans-serif;    
     padding: 25px;      
 }
 
