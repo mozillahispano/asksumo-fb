@@ -21,7 +21,7 @@ $(document).ready(function() {
 	        if (typeof data.message == "undefined") {
 	            $.each(data, function (key, val) {
 	                $.each(val, function (key2, val2) {
-	                    if (typeof val2.title == "undefined") {} else {	                    	
+	                    if (typeof val2.title == "undefined") {} else if(val2.type == 'document') {	                    	
 	                        $('#res').show();
 	                        var titulo = $('<li><a href=https://support.mozilla.org' + val2.url +' target=_blank>' + val2.title + '</a></li>');
 	                        var descripcion = $('<li>' + val2.search_summary + '</li>');
@@ -71,7 +71,7 @@ $(document).ready(function() {
 	        if (typeof data.message == "undefined") {
 	            $.each(data, function (key, val) {
 	                $.each(val, function (key2, val2) {
-	                    if (typeof val2.title == "undefined") {} else {	                    	
+	                    if (typeof val2.title == "undefined") {} else if(val2.type == 'document') {	                    	
 	                        $('#res').show();
 	                        var titulo = $('<li><a href=https://support.mozilla.org' + val2.url +' target=_blank>' + val2.title + '</a></li>');
 	                        var descripcion = $('<li>' + val2.search_summary + '</li>');
