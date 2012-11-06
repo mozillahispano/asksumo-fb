@@ -29,12 +29,12 @@ $(document).ready(function() {
 	                        $("#holder").append(titulo);
 	                        $("#holder").append(descripcion);
 	                        $("ul.pagination").quickPagination();
-	                        $("#res").hide();
+	                        //$("#res").hide();
 	                    }
 	                });
 	            });
 
-	            $('#main2').html($('#main'));
+	            //$('#main2').html($('#main'));
 			    $('#myModal').reveal({
 		     		animation: 'fadeAndPop',                   
 		     		animationspeed: 300,                       
@@ -71,7 +71,7 @@ $(document).ready(function() {
 	        if (typeof data.message == "undefined") {
 	            $.each(data, function (key, val) {
 	                $.each(val, function (key2, val2) {
-	                    if (typeof val2.title == "undefined") {} else if(val2.type == "document"){	                    	
+	                    if (typeof val2.title == "undefined") {} else {	                    	
 	                        $('#res').show();
 	                        var titulo = $('<li><a href=https://support.mozilla.org' + val2.url +' target=_blank>' + val2.title + '</a></li>');
 	                        var descripcion = $('<li>' + val2.search_summary + '</li>');
@@ -79,9 +79,18 @@ $(document).ready(function() {
 	                        $("#holder").append(titulo);
 	                        $("#holder").append(descripcion);
 	                        $("ul.pagination").quickPagination();
+	                        //$('#res').hide();
 	                    }
 	                });
 	            });
+
+	            //$('#holder2').html($('#holder'));
+			    $('#myModal').reveal({
+		     		animation: 'fadeAndPop',                   
+		     		animationspeed: 300,                       
+		     		closeonbackgroundclick: true,              
+		     		dismissmodalclass: 'close-reveal-modal'    
+				});
 
 	        } else {
 	            $('.mensaje_error').hide();

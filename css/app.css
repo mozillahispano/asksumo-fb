@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'openSansBold';
-	src: url('OpenSans-Semibold.ttf')  format('truetype');
+    font-family: 'openSansBold';
+    src: url('OpenSans-Semibold.ttf')  format('truetype');
 }
 
 @font-face {
-	font-family: 'openSansRegular';
-	src: url('OpenSans-Regular.ttf')  format('truetype');
+    font-family: 'openSansRegular';
+    src: url('OpenSans-Regular.ttf')  format('truetype');
 }
 
 body{
-	background: #ECEDEE url(../img/bg-sky.png) 0 0 repeat-x;
-	color: rgb(51, 51, 51);	
+    background: #ECEDEE url(../img/bg-sky.png) 0 0 repeat-x;
+    color: rgb(51, 51, 51); 
 }
 
 input[type="text"]:focus, input.focus {
@@ -34,12 +34,12 @@ input[type="text"] {
 }
 
 h1:first-of-type {
-	font-family: 'openSansRegular', sans-serif;
-	font-size: 48px;
+    font-family: 'openSansRegular', sans-serif;
+    font-size: 48px;
     letter-spacing: -2px;
     line-height: 100%;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-	color: rgb(72, 72, 72);
+    color: rgb(72, 72, 72);
     font-weight: normal;
     text-align: left;
 }
@@ -115,10 +115,10 @@ p {
 }
 
 #form {
-	width: 500px;
-	height: 120px;
-	padding: 0 auto;
-	margin:  0 auto;
+    width: 500px;
+    height: 120px;
+    padding: 0 auto;
+    margin:  0 auto;
 }
 #tit {
     padding-top: 30px;
@@ -144,7 +144,7 @@ p {
 #res {    
     text-align: justify !important;
     font-size: 14px;
-    width: 700px;
+    width: 580px;
     height: 430px;
     margin: 0 auto;
     font-family: 'openSansRegular', sans-serif;    
@@ -152,16 +152,16 @@ p {
 }
 
 #wrapper {
-	text-align: center;
-	height: 795px;
-	width: 805px;
-	border-style: dashed;
+    text-align: center;
+    height: 795px;
+    width: 805px;
+    border-style: dashed;
     border-width: 2px;
 }
 
 .mensaje {
-	padding: 0 auto;
-	margin:  0 auto;
+    padding: 0 auto;
+    margin:  0 auto;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-shadow: 0px 1px rgb(51, 51, 51);
@@ -177,17 +177,17 @@ p {
 }
 
 .mensaje:before {
-	position: absolute;
-	display: inline-block;
-	border-top: 9px solid transparent;
-	border-right: 9px solid #eee;
-	border-bottom: 9px solid transparent;
-	border-right-color: rgb(170, 20, 1);
-	left: 25px;
-	top: 31px;
-	content: '';
-	rotation: -90deg;
-	-moz-transform:rotate(-90deg);
+    position: absolute;
+    display: inline-block;
+    border-top: 9px solid transparent;
+    border-right: 9px solid #eee;
+    border-bottom: 9px solid transparent;
+    border-right-color: rgb(170, 20, 1);
+    left: 25px;
+    top: 31px;
+    content: '';
+    rotation: -90deg;
+    -moz-transform:rotate(-90deg);
 }
 
 .mensaje_error {
