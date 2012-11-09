@@ -154,9 +154,7 @@ p {
 #wrapper {
     text-align: center;
     height: 795px;
-    width: 805px;
-    border-style: dashed;
-    border-width: 2px;
+    width: 805px;   
 }
 
 .mensaje {
