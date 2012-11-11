@@ -165,7 +165,8 @@ p {
     text-align: center;
     line-height: 16px;
     background-color: rgb(170, 20, 1);
-    background-image: -moz-linear-gradient(center top , rgba(218, 81, 50, 0.9), rgb(169, 19, 0));
+    background-image: -moz-linear-gradient(center top, rgb(169, 19, 0, 0.1), rgba(218, 81, 50));
+    background-image: -webkit-linear-gradient(center top, rgb(169, 19, 0, 0.1), rgba(218, 81, 50));    
     border-radius: 4px 4px 4px 4px;
     padding: 10px 15px;    
     box-shadow: 0px 1px rgb(102, 102, 102);
@@ -181,10 +182,11 @@ p {
     border-bottom: 9px solid transparent;
     border-right-color: rgb(170, 20, 1);
     left: 25px;
-    top: 31px;
+    top: -12px;
     content: '';
-    rotation: -90deg;
-    -moz-transform:rotate(-90deg);
+    rotation: 90deg;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
 }
 
 .mensaje_error {    
@@ -195,7 +197,8 @@ p {
     text-align: center;
     line-height: 16px;
     background-color: rgb(170, 20, 1);
-    background-image: -moz-linear-gradient(center top , rgba(218, 81, 50, 0.9), rgb(169, 19, 0));
+    background-image: -moz-linear-gradient(center top, rgb(169, 19, 0, 0.1), rgba(218, 81, 50));
+    background-image: -webkit-linear-gradient(center top, rgb(169, 19, 0, 0.1), rgba(218, 81, 50));    
     border-radius: 4px 4px 4px 4px;
     padding: 10px 15px;    
     box-shadow: 0px 1px rgb(102, 102, 102);
@@ -211,10 +214,11 @@ p {
     border-bottom: 9px solid transparent;
     border-right-color: rgb(170, 20, 1);
     left: 25px;
-    top: 31px;
+    top: -12px;
     content: '';
-    rotation: -90deg;
-    -moz-transform:rotate(-90deg);
+    rotation: 90deg;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
 }
 
 
