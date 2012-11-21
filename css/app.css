@@ -89,22 +89,9 @@ p {
 
 #articulos {
     width: 680px;
-    height: 170px;   
+    height: 150px;   
     text-align: left;
-}
-
-#artiz {
-    float: left;
-    width: 300px;
-    padding: 20px;
-
-}
-
-#artde {
-    float: left;
-    width: 300px;
-    padding: 20px;
-
+    padding-left: 15px;
 }
 
 #info {  
@@ -278,4 +265,17 @@ ul#list{
 
 ul#holder{
     list-style:none;
+}
+
+.resjson {    
+    columns: 2; 
+    -moz-columns: 2; 
+    -webkit-columns: 2; 
+    -moz-column-gap: 15px;
+    -webkit-column-gap: 15px;
+    column-gap: 15px;       
+}
+
+.listar {
+    padding-bottom: 13px;
 }

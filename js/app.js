@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	$.getJSON('https://support.mozilla.org/es/search?sortby_documents=helpful&w=1&a=1&format=json&callback=?', function (data) {
+		$.each(data, function (key, val) {			
+            $.each(val, function (key2, val2) {            	
+            	if(val2.rank < 6){
+            		$(".resjson").append("<li class=listar><a href=https://support.mozilla.org/"+ val2.url +" target=_blank > " + val2.title + "<a></li>");
+            	}
+            });
+        });
+	});
+
 	$('.mensaje').hide();
 	$('.mensaje_error').hide();
 	$('#res').hide();	
@@ -11,7 +21,6 @@ $(document).ready(function() {
 	        $('.mensaje_error').fadeIn(100);
 	        $('.mensaje_error').html("Por favor, rellene este campo.");
 	        $('.mensaje_error').delay(2000).fadeOut('slow');
-
 	    }	        
 
 	    $('#holder').html("");
