@@ -273,7 +273,7 @@ ul#holder{
     -webkit-columns: 2; 
     -moz-column-gap: 15px;
     -webkit-column-gap: 15px;
-    column-gap: 15px;       
+    column-gap: 15px;        
 }
 
 .listar {
