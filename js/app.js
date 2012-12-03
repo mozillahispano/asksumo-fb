@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function() {	
 
-	$.getJSON('https://support.mozilla.org/es/search?sortby_documents=helpful&w=1&a=1&format=json&callback=?', function (data) {
+	$.getJSON(url_popular_articles + '&callback=?', function (data) {
 		$.each(data, function (key, val) {			
             $.each(val, function (key2, val2) {            	
             	if(val2.rank < 6){
@@ -19,13 +19,13 @@ $(document).ready(function() {
 	    if ($('#txtbuscar').val().length < 1) {
 	        $('.mensaje').hide();
 	        $('.mensaje_error').fadeIn(100);
-	        $('.mensaje_error').html("Por favor, rellene este campo.");
+	        $('.mensaje_error').html(error_msg1);
 	        $('.mensaje_error').delay(2000).fadeOut('slow');
 	    }	        
 
 	    $('#holder').html("");
 	    var b = $("#txtbuscar").val();
-	    $.getJSON('https://support.mozilla.org/es/search?q=' + b + '&format=json&callback=?', function (data) {
+	    $.getJSON('https://support.mozilla.org/' + lang_search + '/search?q=' + b + '&format=json&callback=?', function (data) {
 
 	        if (typeof data.message == "undefined") {
 	            $.each(data, function (key, val) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
 	        } else {
 	            $('.mensaje_error').hide();
 	            $('.mensaje').fadeIn(100);
-	            $('.mensaje').html("no hay ninguna referencia");
+	            $('.mensaje').html(error_msg2);
 	            $('.mensaje').delay(2000).fadeOut('slow');
 	            $('#res').hide();	            
 	        }
@@ -69,14 +69,14 @@ $(document).ready(function() {
 	    if ($('#txtbuscar').val().length < 1) {
 	        $('.mensaje').hide();
 	        $('.mensaje_error').fadeIn(100);
-	        $('.mensaje_error').html("Por favor, rellene este campo.");
+	        $('.mensaje_error').html(error_msg1);
 	        $('.mensaje_error').delay(2000).fadeOut('slow');
 
 	    }
 
     $('#holder').html("");
     var b = $("#txtbuscar").val();
-	    $.getJSON('https://support.mozilla.org/es/search?q=' + b + '&format=json&callback=?', function (data) {
+	    $.getJSON('https://support.mozilla.org/' + lang_search + '/search?q=' + b + '&format=json&callback=?', function (data) {
 
 	        if (typeof data.message == "undefined") {
 	            $.each(data, function (key, val) {
@@ -105,7 +105,7 @@ $(document).ready(function() {
 	        } else {
 	            $('.mensaje_error').hide();
 	            $('.mensaje').fadeIn(100);
-	            $('.mensaje').html("no hay ninguna referencia");
+	            $('.mensaje').html(error_msg2);
 	            $('.mensaje').delay(2000).fadeOut('slow');
 	            $('#res').hide();
 	        }
