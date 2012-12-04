@@ -1,9 +1,17 @@
 <?php
+
 require_once __DIR__ . '/ChooseLocale.class.php';
+
 $locale = new tinyL10n\ChooseLocale(array('es', 'en', 'fr'));
 $locale->setDefaultLocale('en');
 $locale->mapLonglocales = true;
-$lang_file = parse_ini_file(__DIR__ . '/lang/' . $locale->getCompatibleLocale() . '.properties');   
+
+// Bypass locale detection with a lang parameter in the URL?
+$lang = (isset($_GET['lang']) && in_array($_GET['lang'], $locale->supportedLocales))
+        ? $_GET['lang'] : $locale->getCompatibleLocale();
+
+$lang_file = parse_ini_file(__DIR__ . '/lang/' . $lang . '.properties');   
+
 ?>
 <!DOCTYPE html>
 <html>
