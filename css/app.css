@@ -159,6 +159,7 @@ p {
     box-shadow: 0px 1px rgb(102, 102, 102);
     max-width: 270px;    
     position: relative;
+    display:none;
 }
 
 .mensaje:before {
@@ -191,6 +192,7 @@ p {
     box-shadow: 0px 1px rgb(102, 102, 102);
     max-width: 300px !important ; 
     position: relative;
+    display:none;
 }
 
 .mensaje_error:before {
