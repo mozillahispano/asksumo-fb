@@ -1,6 +1,6 @@
 $(document).ready(function() {	
 
-	$.getJSON(url_popular_articles + '&callback=?', function (data) {
+	$.getJSON('https://support.mozilla.org/' + lang_search + '/search?topics=hot&a=1&w=1&format=json&callback=?', function (data) {
 		$.each(data, function (key, val) {			
             $.each(val, function (key2, val2) {            	
             	if(val2.rank < 6){
