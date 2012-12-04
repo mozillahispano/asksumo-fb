@@ -6,7 +6,7 @@
  * Author: Pascal Chevrel, Mozilla <pascal@mozilla.com>, Mozilla
  * Contributor: Stanislaw Malolepszy <stas@mozilla.com>, Mozilla
  * Date : 2013-01-03
- * version: 0.3
+ * version: 0.4
  * Description:
  * Class to choose the locale we will show to the visitor
  * based on http accept-lang headers and our list of supported locales.
