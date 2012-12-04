@@ -1,10 +1,10 @@
 $(document).ready(function() {	
 
-	$.getJSON('https://support.mozilla.org/' + lang_search + '/search?topics=hot&a=1&w=1&format=json&callback=?', function (data) {
+	$.getJSON('https://support.mozilla.org/' + lang_search + '/search?sortby_documents=helpful&w=1&a=1&format=json&callback=?', function (data) {
 		$.each(data, function (key, val) {			
             $.each(val, function (key2, val2) {            	
             	if(val2.rank < 6){
-            		$(".resjson").append("<li class=listar><a href=https://support.mozilla.org/"+ val2.url +" target=_blank > " + val2.title + "<a></li>");
+            		$(".resjson").append("<li class=listar><a href=https://support.mozilla.org"+ val2.url +" target=_blank > " + val2.title + "<a></li>");
             	}
             });
         });
