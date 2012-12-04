@@ -46,8 +46,9 @@ $lang_file = parse_ini_file(__DIR__ . '/lang/' . $lang . '.properties');
         <br/>       
         <div id="info">
             <h3><?=$lang_file['popular_articles']?></h3>
-            <div id="articulos">
-                <ul class="resjson" id="list" ></ul>                
+            <div id="articulos">                
+                <ul class="resjson2" id="list"></ul> 
+                <ul class="resjson" id="list"></ul>               
             </div>
             <p><?=$lang_file['msg1']?></p>
             <p><?=$lang_file['msg2']?></p>

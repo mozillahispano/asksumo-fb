@@ -88,7 +88,7 @@ p {
 }
 
 #articulos {
-    width: 680px;
+    width: 640px;
     height: 150px;   
     text-align: left;
     padding-left: 15px;
@@ -267,13 +267,14 @@ ul#holder{
     list-style:none;
 }
 
-.resjson {    
-    columns: 2; 
-    -moz-columns: 2; 
-    -webkit-columns: 2; 
-    -moz-column-gap: 15px;
-    -webkit-column-gap: 15px;
-    column-gap: 15px;        
+.resjson { 
+    float: left;
+    width: 295px;    
+}
+
+.resjson2 {
+    float: right;
+    width: 295px;
 }
 
 .listar {
