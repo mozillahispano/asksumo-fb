@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/ChooseLocale.class.php';
 
-$locale = new tinyL10n\ChooseLocale(array('es', 'en', 'fr'));
+$locale = new tinyL10n\ChooseLocale(array('es', 'en', 'fr', 'id'));
 $locale->setDefaultLocale('en');
 $locale->mapLonglocales = true;
 
