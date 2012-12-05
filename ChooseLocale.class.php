@@ -5,8 +5,8 @@
  * Licence: MPL 2/GPL 2.0/LGPL 2.1
  * Author: Pascal Chevrel, Mozilla <pascal@mozilla.com>, Mozilla
  * Contributor: Stanislaw Malolepszy <stas@mozilla.com>, Mozilla
- * Date : 2013-01-03
- * version: 0.4
+ * Date : 2012-12-05
+ * version: 0.5
  * Description:
  * Class to choose the locale we will show to the visitor
  * based on http accept-lang headers and our list of supported locales.
@@ -22,6 +22,7 @@ class ChooseLocale
     protected $detectedLocale;
     protected $defaultLocale;
     public    $mapLonglocales;
+    public    $rtl = array('ar', 'fa', 'he', 'ur');
 
     public function __construct($list=array('en-US'))
     {
@@ -80,9 +81,18 @@ class ChooseLocale
         return $this->defaultLocale;
     }
 
-    public function setCompatibleLocale()
+    public function getDetectedLocale()
     {
-        $this->detectedLocale = $this->getCompatibleLocale();
+        return $this->detectedLocale;
+    }
+
+    public function setCompatibleLocale($locale=false)
+    {
+        if ($locale && in_array($locale, $this->supportedLocales)) {
+            $this->detectedLocale = $locale;
+        } else {
+            $this->detectedLocale = $this->getCompatibleLocale();
+        }
     }
 
     public function setDefaultLocale($locale)
@@ -107,4 +117,10 @@ class ChooseLocale
 
         return $locale;
     }
+
+    public function getDirection()
+    {
+        return in_array($this->detectedLocale, $this->rtl) ? 'rtl' : 'ltr';
+    }
+
 }
