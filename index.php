@@ -81,4 +81,3 @@ var lang_search = "<?=$lang_file['lang']?>";
 </script>
 </body>
 </html>
-<!-- ddd -> 
