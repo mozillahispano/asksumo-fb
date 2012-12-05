@@ -282,3 +282,19 @@ ul#holder{
 .listar {
     padding-bottom: 13px;
 }
+
+/* Indonesian */
+html[lang=id] h1:first-of-type {
+    font-size: 38px;
+}
+
+html[lang=id] #tit {
+    padding-top: 30px;
+    width: 700px; 
+}
+
+html[lang=id] #tit2 {    
+    width: 510px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
