@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/ChooseLocale.class.php';
+require_once __DIR__ . '/PropertiesParser.class.php';
 
 $locale = new tinyL10n\ChooseLocale(array('ar', 'es', 'en', 'fr', 'id'));
 $locale->setDefaultLocale('en');
@@ -11,7 +12,7 @@ $lang = (isset($_GET['lang'])) ? $_GET['lang'] : false;
 $locale->setCompatibleLocale($lang);
 $lang = $locale->getDetectedLocale();
 
-$lang_file = parse_ini_file(__DIR__ . '/lang/' . $lang . '.properties');   
+$lang_file = tinyL10n\PropertiesParser::propertiesToArray(__DIR__ . '/lang/' . $lang . '.properties');
 
 ?>
 <!DOCTYPE html>
