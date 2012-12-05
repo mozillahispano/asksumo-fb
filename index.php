@@ -39,7 +39,14 @@ $lang_file = parse_ini_file(__DIR__ . '/lang/' . $locale->getCompatibleLocale() 
         <div id="info">
             <h3><?=$lang_file['popular_articles']?></h3>
             <div id="articulos">
-                <ul class="resjson" id="list" ></ul>                
+                <ul class="resjson2" id="list">
+                    <script id="results-template" type="text/html">
+                   
+                        <li>{{title}}</li>
+                    
+                    </script>
+                </ul> 
+                <ul class="resjson" id="list"></ul>                 
             </div>
             <p><?=$lang_file['msg1']?></p>
             <p><?=$lang_file['msg2']?></p>
