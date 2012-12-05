@@ -81,9 +81,18 @@ class ChooseLocale
         return $this->defaultLocale;
     }
 
-    public function setCompatibleLocale()
+    public function getDetectedLocale()
     {
-        $this->detectedLocale = $this->getCompatibleLocale();
+        return $this->detectedLocale;
+    }
+
+    public function setCompatibleLocale($locale=false)
+    {
+        if ($locale && in_array($locale, $this->supportedLocales)) {
+            $this->detectedLocale = $locale;
+        } else {
+            $this->detectedLocale = $this->getCompatibleLocale();
+        }
     }
 
     public function setDefaultLocale($locale)
@@ -109,9 +118,9 @@ class ChooseLocale
         return $locale;
     }
 
-    public function getDirection($locale)
+    public function getDirection()
     {
-        return in_array($locale, $this->rtl) ? 'rtl' : 'ltr';
+        return in_array($this->detectedLocale, $this->rtl) ? 'rtl' : 'ltr';
     }
 
 }
