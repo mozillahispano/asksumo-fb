@@ -57,7 +57,7 @@ $lang_file = parse_ini_file(__DIR__ . '/lang/' . $locale->getCompatibleLocale() 
     </div>
 
 <!-- js -->
-<script src="js/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="js/jquery.reveal.js"></script>
 <script src="js/jquery.quick.pagination.min.js"></script>
 <script src="https://connect.facebook.net/en_US/all.js"></script>
