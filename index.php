@@ -14,7 +14,7 @@ $lang_file = parse_ini_file(__DIR__ . '/lang/' . $lang . '.properties');
 
 ?>
 <!DOCTYPE html>
-<html lang="<?=$lang?>">
+<html lang="<?=$lang?>" dir="<?=$locale->getDirection($lang);?>">
 <head>
     <title>Mozilla Hispano APP</title>
     <meta charset="utf-8"/>
