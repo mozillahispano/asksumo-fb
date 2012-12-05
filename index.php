@@ -2,19 +2,20 @@
 
 require_once __DIR__ . '/ChooseLocale.class.php';
 
-$locale = new tinyL10n\ChooseLocale(array('es', 'en', 'fr', 'id'));
+$locale = new tinyL10n\ChooseLocale(array('ar', 'es', 'en', 'fr', 'id'));
 $locale->setDefaultLocale('en');
 $locale->mapLonglocales = true;
 
 // Bypass locale detection with a lang parameter in the URL?
-$lang = (isset($_GET['lang']) && in_array($_GET['lang'], $locale->supportedLocales))
-        ? $_GET['lang'] : $locale->getCompatibleLocale();
+$lang = (isset($_GET['lang'])) ? $_GET['lang'] : false;
+$locale->setCompatibleLocale($lang);
+$lang = $locale->getDetectedLocale();
 
 $lang_file = parse_ini_file(__DIR__ . '/lang/' . $lang . '.properties');   
 
 ?>
 <!DOCTYPE html>
-<html lang="<?=$lang?>">
+<html lang="<?=$lang?>" dir="<?=$locale->getDirection();?>">
 <head>
     <title>Mozilla Hispano APP</title>
     <meta charset="utf-8"/>
