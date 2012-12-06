@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/ChooseLocale.class.php';
-require_once __DIR__ . '/PropertiesParser.class.php';
+require_once __DIR__ . '/lib/ChooseLocale.class.php';
+require_once __DIR__ . '/lib/PropertiesParser.class.php';
 
 $locale = new tinyL10n\ChooseLocale(array('ar', 'es', 'en', 'fr', 'id'));
 $locale->setDefaultLocale('en');

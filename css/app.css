@@ -326,9 +326,14 @@ html[lang=ar] h3:first-of-type {
 	text-align: right;
 }
 
-html[lang=ar] p:first-of-type, p {
+html[lang=ar] p:first-of-type {
 	text-align: right;
 }
+
+html[lang=ar] p {
+    text-align: right;
+}
+
 
 html[lang=ar] input[type="text"] {
 	float: left;
@@ -345,9 +350,9 @@ html[lang=ar] .mensaje_error {
 }
 
 html[lang=ar] .mensaje_error:before {
-	left: 200px;	
+	left: 140px;	
 }
 
 html[lang=ar] .mensaje:before {
-	left: 90px;
+	left: 80px;
 }
