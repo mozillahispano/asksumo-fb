@@ -298,3 +298,56 @@ html[lang=id] #tit2 {
     padding-left: 20px;
     padding-top: 30px;
 }
+
+/* Arabic */
+html[lang=ar] body {
+	float: left;
+}
+
+html[lang=ar] #tit1 {
+	float: right;
+}
+
+html[lang=ar] #tit2 {
+	float: left;
+	padding-right: 20px;
+	padding-left: 0px;
+}
+
+html[lang=ar] #articulos {
+	text-align: right;
+}
+
+html[lang=ar] h1:first-of-type {
+	text-align: right;
+}
+
+html[lang=ar] h3:first-of-type {
+	text-align: right;
+}
+
+html[lang=ar] p:first-of-type, p {
+	text-align: right;
+}
+
+html[lang=ar] input[type="text"] {
+	float: left;
+}
+
+html[lang=ar] .mensaje {
+	float: right;
+	right: 134px;
+}
+
+html[lang=ar] .mensaje_error {
+	float: right;
+	right: 134px;
+}
+
+html[lang=ar] .mensaje_error:before {
+	left: 200px;	
+}
+
+html[lang=ar] .mensaje:before {
+	left: 90px;
+}
