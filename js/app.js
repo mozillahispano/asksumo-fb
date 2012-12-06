@@ -40,7 +40,7 @@ $(document).ready(function() {
 	        if (typeof data.message == "undefined") {
 	            $.each(data, function (key, val) {
 	                $.each(val, function (key2, val2) {
-	                    if (typeof val2.title == "undefined") {} else if(val2.type != 'question') {	                    	
+	                    if (typeof val2.title == "undefined") { } else if(val2.type != 'question') {	                    	
 	                        $('#res').show();
 	                        var titulo = $('<li><a href=https://support.mozilla.org' + val2.url +' target=_blank>' + val2.title + '</a></li>');
 	                        var descripcion = $('<li>' + val2.search_summary + '</li>');
@@ -49,17 +49,26 @@ $(document).ready(function() {
 	                        $("#holder").append(descripcion);
 	                        $("ul.pagination").quickPagination();
 	                        //$("#res").hide();	        
-	                    } 
+	                    }
 	                });
 	            });
 
 	            //$('#main2').html($('#main'));
-			    $('#myModal').reveal({
-		     		animation: 'fadeAndPop',                   
-		     		animationspeed: 300,                       
-		     		closeonbackgroundclick: true,              
-		     		dismissmodalclass: 'close-reveal-modal'    
-				});	
+	            if($('#myModal').val().length < 1){
+	            	$('.mensaje_error').hide();
+	            	$('.mensaje').fadeIn(100);
+	            	$('.mensaje').html(error_msg2);
+	            	$('.mensaje').delay(2000).fadeOut('slow');
+	            	$('#res').hide();
+	            }else {
+	            	$('#myModal').reveal({
+			     		animation: 'fadeAndPop',                   
+			     		animationspeed: 300,                       
+			     		closeonbackgroundclick: true,              
+			     		dismissmodalclass: 'close-reveal-modal'    
+					});	
+	            }
+			    
 
 	        } else {
 	            $('.mensaje_error').hide();
@@ -105,12 +114,20 @@ $(document).ready(function() {
 	            });
 
 	            //$('#holder2').html($('#holder'));
-			    $('#myModal').reveal({
-		     		animation: 'fadeAndPop',                   
-		     		animationspeed: 300,                       
-		     		closeonbackgroundclick: true,              
-		     		dismissmodalclass: 'close-reveal-modal'    
-				});
+			    if($('#myModal').val().length < 1){
+	            	$('.mensaje_error').hide();
+	            	$('.mensaje').fadeIn(100);
+	            	$('.mensaje').html(error_msg2);
+	            	$('.mensaje').delay(2000).fadeOut('slow');
+	            	$('#res').hide();
+	            }else {
+	            	$('#myModal').reveal({
+			     		animation: 'fadeAndPop',                   
+			     		animationspeed: 300,                       
+			     		closeonbackgroundclick: true,              
+			     		dismissmodalclass: 'close-reveal-modal'    
+					});	
+	            }
 
 	        } else {
 	            $('.mensaje_error').hide();

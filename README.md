@@ -12,7 +12,7 @@ The content will load from Mozilla Hispano server and will be always updated wit
 
 ## New localization
 
-If you want to request a new localization, please head to [the project at transifex](https://www.transifex.com/projects/p/mozillahispano/resource/asksumo-fb/)  and click on "Add new translation" (you will need to be logged in)
+If you want to request a new localization, you can do it from the ['create a language' feature](https://www.transifex.com/projects/p/mozillahispano/) and then localize asksumo online from [the resource at transifex](https://www.transifex.com/projects/p/mozillahispano/resource/asksumo-fb/) (you will need to be logged in)
 
 Once you finish, please [open a new issue here](https://github.com/mozillahispano/asksumo-fb/issues) with "Add YourLocaleName (xx-XX)" as title asking for addition.
 
