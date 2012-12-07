@@ -54,7 +54,7 @@ $(document).ready(function() {
 	            });
 
 	            //$('#main2').html($('#main'));
-	            if($('#myModal').val().length < 1){
+	            if($('#holder').html() == ""){
 	            	$('.mensaje_error').hide();
 	            	$('.mensaje').fadeIn(100);
 	            	$('.mensaje').html(error_msg2);
@@ -114,7 +114,7 @@ $(document).ready(function() {
 	            });
 
 	            //$('#holder2').html($('#holder'));
-			    if($('#myModal').val().length < 1){
+			    if($('#holder').html() == ""){
 	            	$('.mensaje_error').hide();
 	            	$('.mensaje').fadeIn(100);
 	            	$('.mensaje').html(error_msg2);
