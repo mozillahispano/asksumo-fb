@@ -235,31 +235,31 @@ p {
 }
 
 ul.simplePagerNav li{
- display:block;
- float: left;
- padding: 10px;
- margin-bottom: 10px;
- font-family: georgia;
- font-size:14px;
- }
+    display:block;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: georgia;
+    font-size:14px;
+}
  
- ul.simplePagerNav li a{
- color: rgb(0, 149, 221);
- text-decoration: none;
- }
+ul.simplePagerNav li a{
+    color: rgb(0, 149, 221);
+    text-decoration: none;
+}
  
- li.currentPage {
+li.currentPage {
     border-radius: 0.25em 0.25em 0.25em 0.25em;
     box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1), 0px -2px 0px 0px rgba(0, 0, 0, 0.2) inset;
     background-color: rgb(39, 97, 149);
     background-repeat: repeat-x;
     background-image: linear-gradient(rgb(60, 136, 204), rgb(39, 97, 149));
     color: rgb(255, 255, 255);
- }
+}
  
- ul.simplePagerNav li.currentPage a {
- color: #fff;
- }
+ul.simplePagerNav li.currentPage a {
+    color: #fff;
+}
 
 ul#list{
     list-style-type:square;
@@ -283,7 +283,12 @@ ul#holder{
     padding-bottom: 13px;
 }
 
-/* Indonesian */
+/* fr */
+html[lang=fr] #articulos {
+    height: 180px;
+}
+
+/* id */
 html[lang=id] h1:first-of-type {
     font-size: 38px;
 }
