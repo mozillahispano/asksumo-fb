@@ -304,6 +304,15 @@ html[lang=id] #tit2 {
     padding-top: 30px;
 }
 
+/* sq */
+html[lang=sq] #tit2 {
+    padding-top: 5px;
+}
+
+html[lang=sq] h1:first-of-type {
+    font-size: 45px;
+}
+
 /* rtl = ar, fa, he, ur */
 html[lang=ar] body, html[lang=fa] body, html[lang=he] body, html[lang=ur] body {
 	float: left;
