@@ -68,7 +68,7 @@ $lang_file = tinyL10n\PropertiesParser::propertiesToArray(__DIR__ . '/lang/' . $
     </div>
 
 <!-- js -->
-<script data-main="js/app" src="js/require.js"></script>
+<script data-main="js/app" src="js/require-jquery.js"></script>
 <script src="https://connect.facebook.net/en_US/all.js"></script>
 <script src="js/faceconfig.js"></script>
 <script type="text/javascript">
