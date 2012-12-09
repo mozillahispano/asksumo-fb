@@ -68,11 +68,8 @@ $lang_file = tinyL10n\PropertiesParser::propertiesToArray(__DIR__ . '/lang/' . $
     </div>
 
 <!-- js -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery.reveal.js"></script>
-<script src="js/jquery.quick.pagination.min.js"></script>
+<script data-main="js/app" src="js/require.js"></script>
 <script src="https://connect.facebook.net/en_US/all.js"></script>
-<script src="js/app.js"></script>
 <script src="js/faceconfig.js"></script>
 <script type="text/javascript">
 var url_popular_articles = "<?=$lang_file['url_popular_articles']?>";
