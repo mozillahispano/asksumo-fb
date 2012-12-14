@@ -21,6 +21,6 @@ Once you finish, please [open a new issue here](https://github.com/mozillahispan
 ## Self-host the code
 *You can also create a new Facebook app and host the code on your own, but if you want to have it updated we recommend to add our already created app*
 
-![Step 1](asksumo-fb/blob/master/doc/1install.png)
+![Step 1](https://raw.github.com/mozillahispano/asksumo-fb/master/doc/1install.png)
 
-![Step 2](asksumo-fb/blob/master/doc/2install.png)
+![Step 2](https://raw.github.com/mozillahispano/asksumo-fb/master/doc/2install.png)
