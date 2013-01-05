@@ -19,7 +19,7 @@ class PropertiesParser
     public static function propertiesToArray($file) {
         if (!is_file($file)) return array();
 
-        $source = file($file);
+        $source = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
         // we parse the $source array, remove white space and delimiting quotes, skip comments and blank lines
         foreach ($source as $value) {
