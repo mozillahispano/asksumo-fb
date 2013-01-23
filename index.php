@@ -3,7 +3,7 @@
 require_once __DIR__ . '/lib/ChooseLocale.class.php';
 require_once __DIR__ . '/lib/PropertiesParser.class.php';
 
-$locale = new tinyL10n\ChooseLocale(array('ar', 'bn-BD', 'bn-IN', 'el', 'en', 'es', 'ff', 'fr', 'ga', 'id', 'lij', 'ms', 'nl', 'pt', 'sq', 'zh-TW'));
+$locale = new tinyL10n\ChooseLocale(array('ar', 'bn-BD', 'bn-IN', 'el', 'en', 'es', 'ff', 'fr', 'ga', 'id', 'lij', 'ms', 'nl', 'pt', 'ro-RO', 'sq', 'zh-TW'));
 
 $locale->setDefaultLocale('en');
 $locale->mapLonglocales = true;
