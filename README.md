@@ -18,6 +18,26 @@ Once you finish, please [open a new issue here](https://github.com/mozillahispan
 
 (Keep in mind you need to localize [SUMO hot articles](https://support.mozilla.org/topics/hot) in your language in order to be fetched by this app.)
 
+## Supported Languages
+
+* English (Default)
+* Spanish
+* Indonesian
+* Irish
+* French
+* Romanian (Romania)
+* Bengali (Bangladesh)
+* Bengali (India)
+* Chinese (Taiwan)
+* Sardinian
+* Greek
+* Fulah
+* Dutch
+* Malay (Malaysia)
+* Arabic
+* Albanian
+* Portuguese (Brazil)
+
 ## Self-host the code
 *You can also create a new Facebook app and host the code on your own, but if you want to have it updated we recommend to add our already created app*
 
