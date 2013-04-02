@@ -24,6 +24,7 @@ Once you finish, please [open a new issue here](https://github.com/mozillahispan
 * Spanish
 * Indonesian
 * Irish
+* Italian
 * French
 * Romanian (Romania)
 * Bengali (Bangladesh)
