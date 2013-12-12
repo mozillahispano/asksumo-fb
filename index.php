@@ -29,7 +29,7 @@ $lang_file = tinyL10n\PropertiesParser::propertiesToArray(__DIR__ . '/lang/' . $
     <div id="wrapper">
         <div id="tit">          
             <div id="tit1">
-                <img src="img/identity-logo-firefox.png" alt="firefox" />
+                <img src="img/new_identity-logo-firefox.png" alt="firefox" />
             </div>          
             <div id="tit2">
                 <h1><?=$lang_file['title']?></h1>
