@@ -73,7 +73,6 @@ $lang_file = tinyL10n\PropertiesParser::propertiesToArray(__DIR__ . '/lang/' . $
 <script src="https://connect.facebook.net/en_US/all.js"></script>
 <script src="js/faceconfig.js"></script>
 <script type="text/javascript">
-var url_popular_articles = "<?=$lang_file['url_popular_articles']?>";
 var error_msg1  = "<?=$lang_file['error_msg1']?>";
 var error_msg2  = "<?=$lang_file['error_msg2']?>";
 var lang_search = "<?=$lang_file['lang']?>";
